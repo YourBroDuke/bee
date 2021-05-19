@@ -69,8 +69,8 @@ func (c *factory) Deploy(ctx context.Context, issuer common.Address, defaultHard
 	request := &transaction.TxRequest{
 		To:       &c.address,
 		Data:     callData,
-		GasPrice: nil,
-		GasLimit: 0,
+		GasPrice: big.NewInt(100),
+		GasLimit: 21000,
 		Value:    big.NewInt(0),
 	}
 
