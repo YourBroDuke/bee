@@ -70,7 +70,7 @@ func (c *factory) Deploy(ctx context.Context, issuer common.Address, defaultHard
 		To:       &c.address,
 		Data:     callData,
 		GasPrice: big.NewInt(100),
-		GasLimit: 21000,
+		GasLimit: 0,
 		Value:    big.NewInt(0),
 	}
 

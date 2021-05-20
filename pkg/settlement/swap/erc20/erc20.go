@@ -79,7 +79,7 @@ func (c *erc20Service) Transfer(ctx context.Context, address common.Address, val
 		To:       &c.address,
 		Data:     callData,
 		GasPrice: big.NewInt(100),
-		GasLimit: 21000,
+		GasLimit: 0,
 		Value:    big.NewInt(0),
 	}
 
